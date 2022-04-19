@@ -1,0 +1,47 @@
+<title>Cadastro</title>
+
+<%- include("./partials/header")%>
+
+
+<!-- Registration Form -->
+<div class="form signup">
+    <span class="title">Cadastro</span>
+
+    <form action="#">
+        <div class="input-field">
+            <input type="text" placeholder="Seu nome e sobrenome" required>
+            <i class="uil uil-user"></i>
+        </div>
+        <div class="input-field">
+            <input type="text" placeholder="Seu email" required>
+            <i class="uil uil-envelope icon"></i>
+        </div>
+        <div class="input-field">
+            <input type="password" class="password" placeholder="Crie uma senha" required>
+            <i class="uil uil-lock icon"></i>
+        </div>
+        <div class="input-field">
+            <input type="password" class="password" placeholder="Repita a senha" required>
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw"></i>
+        </div>
+
+        <div class="checkbox-text">
+            <div class="checkbox-content">
+                <input type="checkbox" id="sigCheck">
+                <label for="sigCheck" class="text">Lembre-me</label>
+            </div>
+
+            <a href="#" class="text">Forgot password?</a>
+        </div>
+
+        <div class="input-field button">
+            <input type="button" href="/userLogado.ejs" value="Entre">
+        </div>
+    </form>
+</div>
+</div>
+</div>
+<!-- <script src="../controllers/userLoginController.js"></script> -->
+
+<%- include("./partials/footer")%>
